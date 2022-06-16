@@ -1,11 +1,16 @@
-const btnAdicionar = document.getElementById("btn-adicionar");
+const btnIncrementar = document.getElementById("btn-incrementar");
+const btnDecrementar = document.getElementById("btn-decrementar");
 const p = document.getElementById("contador");
 
-let contador = 0;
+var contador = 0;
 
 p.innerHTML = contador;
 
-btnAdicionar.addEventListener("click", function() {
+btnIncrementar.addEventListener("click", function() {
     p.innerHTML = ++contador;
+});
+
+btnDecrementar.addEventListener("click", function() {
+    p.innerHTML = --contador;
 });
 
