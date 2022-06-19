@@ -1,4 +1,6 @@
 function comparaNumeros(N1, N2) {
+    if(!N1 || !N2) return "Digite dois números!";
+
     const primeiraEtapa = criaEtapa(N1, N2);
     const segundaEtapa = criaSegundaetapa(N1, N2);
 
@@ -32,4 +34,4 @@ function criaSegundaetapa(N1, N2) {
     return `Sua soma é ${soma}, que é ${resultado10} que 10 e ${resultado20} que 20.`
 }
 
-console.log(comparaNumeros(4,2));
+console.log(comparaNumeros());

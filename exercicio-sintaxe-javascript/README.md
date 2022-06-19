@@ -1,4 +1,4 @@
-##Atividade JavaScript##
+Atividade JavaScript
 
 - Criar uma função que receba dois números como parâmetros.
 
