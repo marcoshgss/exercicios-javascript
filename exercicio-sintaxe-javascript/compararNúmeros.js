@@ -10,24 +10,26 @@ function criaEtapa(N1, N2) {
     if(N1 !== N2) {
         saoIguais = 'não'; 
     }
-    return `Os números ${N1} e ${N2} $ {saoIguais} são iguais.`
+    return `Os números ${N1} e ${N2} ${saoIguais} são iguais.`
 };
 
-//function criaSegundaetapa(N1, N2) {
- //   const soma = N1 + N2;
+function criaSegundaetapa(N1, N2) {
+    const soma = N1 + N2;
     
-  //  let resultado10 = 'menor';
-  //  let resultado20 = 'menor';
-  //  const compara10 = soma > 10;
-  //  const compara20 = soma > 20;
+    let resultado10 = 'menor';
+    let resultado20 = 'menor';
+    const compara10 = soma > 10;
+    const compara20 = soma > 20;
 
-   // if(compara10) {
-   //     resultado10 = 'maior';
-   // }
+    if(compara10) {
+        resultado10 = 'maior';
+    }
 
-   // if(compara20) {
-    //    resultado20 = 'maior';
-    //}
+    if(compara20) {
+        resultado20 = 'maior';
+    }
 
-   // return `Sua soma é ${soma}, que é ${resultado10} que 10 e ${resultado20} que 20.`
-//}
+    return `Sua soma é ${soma}, que é ${resultado10} que 10 e ${resultado20} que 20.`
+}
+
+console.log(comparaNumeros(4,2));
