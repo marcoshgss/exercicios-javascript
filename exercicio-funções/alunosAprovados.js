@@ -27,4 +27,4 @@ function alunosAprovados(array, media) {
     }
     return aprovados;
 }
-console.log(alunosAprovados(alunos, 0));
+console.log(alunosAprovados(alunos, 5));
