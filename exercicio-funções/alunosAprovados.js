@@ -1,0 +1,3 @@
+function alunosAprovados (array, media){
+
+}
