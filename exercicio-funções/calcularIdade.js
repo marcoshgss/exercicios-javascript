@@ -10,7 +10,7 @@ const pessoa1 = {
 
 const pessoa2 = {
     nome: 'Marcia',
-    idade: 23
+    idade: 2
 };
 
 const animal1 = {
@@ -18,3 +18,4 @@ const animal1 = {
     idade: 2,
     raca: 'gato'
 };
+console.log(calcularIdade.call(pessoa1, 30));
