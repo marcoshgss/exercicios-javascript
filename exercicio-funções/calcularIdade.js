@@ -16,6 +16,7 @@ const pessoa2 = {
 const animal1 = {
     nome: 'ninu',
     idade: 2,
-    raca: 'gato'
+    raca: 'siamês'
 };
-console.log(calcularIdade.call(pessoa1, 30));
+/*console.log(calcularIdade.call(pessoa1, 30));*/
+console.log(calcularIdade.apply(animal1, [7]));
