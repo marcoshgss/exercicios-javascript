@@ -19,11 +19,12 @@ const alunos = [
 function alunosAprovados(array, media) {
     let aprovados = [];
     for (let i = 0; i < array.length; i++) {
-       const {nota, nome} = array[i];
+        const { nota, nome } = array[i];
 
-        if(array[i].nota >= media) {
-            aprovados.push(array[i].nome);
+        if (nota >= media) {
+            aprovados.push(nome);
         }
     }
     return aprovados;
 }
+console.log(alunosAprovados(alunos, 0));
