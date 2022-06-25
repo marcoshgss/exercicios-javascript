@@ -16,7 +16,7 @@ class contaBancaria {
 
     sacar(valor) {
         if (valor > this._saldo) {
-            return 'Operação negada';
+            return "Operação negada!";
         }
         this._saldo = this._saldo - valor;
 
@@ -34,6 +34,36 @@ class ContaCorrente {
     constructor(agencia, numero, saldo, cartaoCredito) {
         super(agencia, numero, saldo);
         this.tipo = 'corrente';
-        this.cartaoCredito = cartaoCredito;
+        this._cartaoCredito = cartaoCredito;
+    }
+
+    get cartaoCredito() {
+        return this._cartaoCredito;
+    }
+
+    set cartaoCredito(valor) {
+        this._cartaoCredito = valor;
+    }
+}
+
+class ContaPoupanca {
+    constructor(agencia, numero, saldo) {
+        super(agencia, numero, saldo);
+        this.tipo = 'poupança';
+
+    }
+
+}
+
+class ContaUniversitaria {
+    constructor(agencia, numero, saldo) {
+        super(agencia, numero, saldo);
+        this.tipo = 'universitária';
+    }
+    sacar(valor) {
+        if(valor > 500) {
+            return "Operação negada!";
+        }
+        this._saldo = this._saldo - valor;
     }
 }
