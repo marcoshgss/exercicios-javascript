@@ -8,8 +8,8 @@ for(let i = 0; i < qtdEntradas; i++){
     nivelEnergia = parseInt(input);
     
     if(nivelEnergia <= 8000){
-        print (         );
+        print (" Inseto!");
     }else{
-        print (         );
+        print ("Mais de 8000!");
     }
 }
