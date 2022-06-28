@@ -16,7 +16,10 @@ function calc() {
         calculo += num;
     } 
 
-    
+    if (A == B) {
+        return A + B;
+    }
+    return calculo;
 }
 
 print(total);
