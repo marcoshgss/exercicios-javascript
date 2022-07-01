@@ -21,13 +21,19 @@ N (100 <= N <= 100000) relativo ao nível de energia de um ser vivo.
 Para cada valor lido, imprima o texto correspondente.
 
 # Exemplo de Entrada:	
+
 3
+
 8001
+
 100
+
 200
 
 # Exemplo de Saída:
 
 Mais de 8000!
+
 Inseto!
+
 Inseto!
